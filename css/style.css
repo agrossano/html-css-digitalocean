@@ -1,8 +1,87 @@
+header {
+  padding-top: 60px;
+}
+
+
 /* debug */
 [class*="col-"] {
-  background: #004aff;
+  background: lightblue;
   border: 1px solid black;
-  height: 200px;
+  /* height: 100px; */
 }
 
 /* debug */
+
+/* HEADER ****************************************************/
+.signup {
+  background-color: #fff;
+  border: 1px solid rgba(3,27,78,.1);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(3,27,78,.1);
+  margin: 0;
+  padding: 32px;
+  }
+
+header input {
+  height: 48px;
+  max-width: 100%;
+  padding: 0 16px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  color: rgba(3,27,78,.7);
+  transition: all .25s cubic-bezier(.645,.045,.355,1);
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+}
+
+header .btn {
+  width: 100%;
+  background-color: #579aff;
+  border: none;
+  color: #fff;
+}
+
+header .google {
+  background-color: #fff;
+  color: #626262;
+  box-shadow: 0 0 1px rgba(0,0,0,.12), 0 1px 1px rgba(0,0,0,.24);
+  position: relative;
+}
+
+header .google img {
+  width: 18px;
+  height: 18px;
+  left: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* CLIENTS ***************************************************/
+
+.clients ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 170px;
+}
+
+.clients li img {
+  width: 100%;
+}
+
+/* FEATURES *************************************************/
+
+.screen {
+  width: 736px;
+  height: auto;
+}
+
+/* LOVE DIGITALOCEAN **************************/
+
+.rockerbox {
+  background-color: #fff;
+  /* debug */
+  height: 360px;
+  width: 750px;
+}
