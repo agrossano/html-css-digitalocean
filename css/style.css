@@ -58,8 +58,6 @@ nav img {
   width: 10px;
 }
 
-
-
 .navbar, .navbar-inverse {
 	border-radius: 0;
 	border: none;
@@ -72,58 +70,28 @@ nav img {
 	color: white;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
-}
-
-
-
-
-
-
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
-}
-
 .nav li {
 	display: inline;
 	color: white;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+  nav ul li {
+    padding: 20px 2px;
+
+  }
+
+  .nav-menu-l {
+    padding: 10px 0 0 103px;
+  }
+
+  .nav-menu-r {
+    padding: 3px 0 0 77px;
+  }
+
 }
-
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
-}
-
-
-
-
-
-
-
-
 
 /* HEADER ****************************************************/
 header {
@@ -511,8 +479,6 @@ td:nth-of-type(3):hover {
   }
 }
 
-/* @media (min-width: 768px) { */
-
 
 /* LOVE DIGITALOCEAN ***********************************/
 .love {
@@ -530,13 +496,13 @@ td:nth-of-type(3):hover {
 
 .rockerbox {
   background-color: #fff;
-  height: 360px;
+  height: 70%;
   width: 58%;
   margin: 0 auto;
 }
 
 .rockerbox img {
-  padding: 55px 0 20px;
+  padding: 65px 0 20px;
 }
 
 .rockerbox .intro {
@@ -564,7 +530,7 @@ cite p:first-of-type {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  padding-top: 16px;
+  padding: 16px 0 70px;
 }
 
 .dots {
@@ -586,11 +552,12 @@ cite p:first-of-type {
   background: #0069ff;
 }
 
-/* @media (max-width: 992px) {
-  .rockerbox {
-    width: 90%;
+@media (max-width: 992px) {
+  .rockerbox img {
+    width: 80%;
   }
-} */
+}
+
 
 
 
