@@ -1,24 +1,127 @@
 /* GENERAL */
 
-/* NAV ****************************/
+
+/* NAV ********************************************/
 nav {
   height: 76px;
 }
+
+.nav-menu-l {
+  padding: 10px 0 0 81px;
+}
+
+.nav-menu-r {
+  padding: 3px 0 0 62px;
+}
+
+
 nav ul li {
   display: inline-block;
   padding: 20px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+nav li:hover {
+  color: #0069ff;
+  cursor: pointer;
 }
 
 nav img {
   width: 165px;
   height: auto;
-  padding-top: 15px;
+  padding-top: 23px;
   height: auto;
+}
+
+.btn-nav {
+  border: 1px solid #0069ff;
+  border-radius: 5px;
+  color: #0069ff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  padding: 11px 16px 8px;
+  transition: background-color .25s linear,border-color .25s linear,color .25s linear;
+}
+
+.btn-nav:hover {
+  background-color: #0069ff;
+  color: #fff;
+  border-color: #0069ff;
+  text-decoration: none;
 }
 
 #arrow-down {
   width: 10px;
 }
+
+
+
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
+
+
+
+
+
+
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
+
+
+
+
+
+
 
 
 
@@ -91,6 +194,12 @@ header {
   border: none;
   color: #fff;
   margin-top: 10px;
+  transition: background-color .25s ease,border .25s ease,color .25s ease;
+}
+
+.signup .btn:hover {
+  background-color: #1633ff;
+  color: #fff;
 }
 
 .signup .google {
@@ -98,6 +207,11 @@ header {
   color: #626262;
   box-shadow: 0 0 1px rgba(0,0,0,.12), 0 1px 1px rgba(0,0,0,.24);
   position: relative;
+}
+
+.signup .google:hover {
+  background-color: #eee;
+  color: #757575;
 }
 
 .signup .google img {
@@ -142,6 +256,7 @@ header {
 
 .clients li img {
   width: 100%;
+  height: auto;
 }
 
 .clients a {
@@ -149,6 +264,22 @@ header {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+}
+
+.clients a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .clients ul li {
+    width: 145px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients ul li {
+    width: 180px;
+  }
 }
 
 /* DEPLOY ***************************************************/
@@ -188,6 +319,12 @@ header {
 .deploy li a {
   font-size: 18px;
   color: rgba(3,27,78,.5);
+  transition: color .25s linear;
+}
+
+.deploy li a:hover {
+  text-decoration: none;
+  color: #031b4e;
 }
 
 .deploy img {
@@ -282,6 +419,11 @@ header {
   color: #005fe6;
 }
 
+.features a:hover {
+  text-decoration: none;
+}
+
+
 /* TABELLA ********************************/
 
 .tabella {
@@ -298,6 +440,10 @@ header {
   font-weight: 600;
 }
 
+.tabright td:nth-of-type(2) {
+  padding-right: 260px;
+}
+
 tr td {
   padding: 12px 0 12px;
   border-bottom: 1px solid #fff;
@@ -311,17 +457,62 @@ td:first-of-type {
 
 td:nth-of-type(2){
   font-size: 13px;
+  font-weight: 600;
   color: #fff;
   line-height: 20px;
-  opacity: .6;
+  opacity: .7;
   padding-left: 51px;
   padding-right: 232px;
 }
 
 td:nth-of-type(3) {
   font-size: 13px;
+  font-weight: 600;
   color: #00d7d2;
 }
+
+td:nth-of-type(3):hover {
+  text-decoration: none;
+  color: #005fe6;
+  cursor: pointer;
+}
+
+
+@media (max-width: 580px) {
+  .tabright td:nth-of-type(2) {
+    padding-right: 149px;
+  }
+  td:nth-of-type(2) {
+    padding-right: 116px;
+  }
+}
+
+@media (min-width: 768px) {
+  td:nth-of-type(2) {
+    padding-right: 228px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tabright td:nth-of-type(2) {
+    padding-right: 166px;
+  }
+  td:nth-of-type(2) {
+    padding-right: 134px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tabright td:nth-of-type(2) {
+    padding-right: 260px;
+  }
+  td:nth-of-type(2) {
+    padding-right: 232px;
+  }
+}
+
+/* @media (min-width: 768px) { */
+
 
 /* LOVE DIGITALOCEAN ***********************************/
 .love {
@@ -340,7 +531,7 @@ td:nth-of-type(3) {
 .rockerbox {
   background-color: #fff;
   height: 360px;
-  width: 655px;
+  width: 58%;
   margin: 0 auto;
 }
 
@@ -384,8 +575,6 @@ cite p:first-of-type {
 .dot {
   border: 2px solid #0069ff;
   height: 10px;
-  margin: 0 6px;
-  opacity: 1;
   width: 10px;
   display: inline-block;
   margin: 0 8px;
@@ -396,6 +585,14 @@ cite p:first-of-type {
 .dots .selected {
   background: #0069ff;
 }
+
+/* @media (max-width: 992px) {
+  .rockerbox {
+    width: 90%;
+  }
+} */
+
+
 
 /* GET STARTED **********************************************/
 
@@ -422,6 +619,14 @@ cite p:first-of-type {
   line-height: 48px;
   padding: 16px 35px;
   text-align: center;
+  transition: background-color .25s ease,border .25s ease,color .25s ease;
+}
+
+.btn-started:hover {
+  background-color: hsla(0,0%,100%,.8);
+  border: none;
+  color: #0069ff;
+  text-decoration: none;
 }
 
 /* FOOTER ************************************************/
@@ -449,6 +654,10 @@ footer ul li:first-of-type {
   color: #fff;
 }
 
+footer ul li:not(:first-of-type):hover {
+  color: #fff;
+  cursor: pointer;
+}
 
 footer ul {
   padding-left: 0;
